@@ -1,6 +1,6 @@
-# XZPToolv3
+# XZP Tool v3
 
-XZPToolv3 is a Windows GUI tool for working with Xbox 360 XZP archives, plus XUI/XUR viewing and conversion.
+XZP Tool v3 is a Windows GUI tool for working with Xbox 360 XZP archives, plus XUI/XUR viewing and conversion.
 
 ## Build
 
