@@ -33,6 +33,7 @@ namespace XZPToolv3
             this.convertToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.copyArchiveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.archiveDetailsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xusEditorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator7 = new System.Windows.Forms.ToolStripSeparator();
             this.encryptXZPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.settingsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -161,6 +162,7 @@ namespace XZPToolv3
             this.convertToolStripMenuItem,
             this.copyArchiveToolStripMenuItem,
             this.archiveDetailsToolStripMenuItem,
+            this.xusEditorToolStripMenuItem,
             this.toolStripSeparator7,
             this.encryptXZPToolStripMenuItem,
             this.settingsToolStripMenuItem});
@@ -190,6 +192,13 @@ namespace XZPToolv3
             this.archiveDetailsToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
             this.archiveDetailsToolStripMenuItem.Text = "Archive &Details...";
             this.archiveDetailsToolStripMenuItem.Click += new System.EventHandler(this.archiveDetailsToolStripMenuItem_Click);
+            // 
+            // xusEditorToolStripMenuItem
+            // 
+            this.xusEditorToolStripMenuItem.Name = "xusEditorToolStripMenuItem";
+            this.xusEditorToolStripMenuItem.Size = new System.Drawing.Size(166, 22);
+            this.xusEditorToolStripMenuItem.Text = "XUS &Editor...";
+            this.xusEditorToolStripMenuItem.Click += new System.EventHandler(this.xusEditorToolStripMenuItem_Click);
             // 
             // toolStripSeparator7
             // 
@@ -469,6 +478,7 @@ namespace XZPToolv3
         private System.Windows.Forms.ToolStripMenuItem convertToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem copyArchiveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem archiveDetailsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem xusEditorToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.ToolStrip toolStrip;

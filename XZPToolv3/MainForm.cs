@@ -379,6 +379,7 @@ namespace XZPToolv3
                 case ".xex": return "Xbox Executable";
                 case ".xui": return "XUI Interface";
                 case ".xur": return "XUR Interface";
+                case ".xus": return "XUS Strings";
                 case ".xml": return "XML File";
                 case ".txt": return "Text File";
                 default: return ext.TrimStart('.').ToUpper() + " File";
@@ -835,6 +836,14 @@ namespace XZPToolv3
             }
         }
 
+        private void xusEditorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            using (XusEditorForm editor = new XusEditorForm())
+            {
+                editor.ShowDialog(this);
+            }
+        }
+
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
             using (AboutForm about = new AboutForm())
@@ -867,6 +876,13 @@ namespace XZPToolv3
                 else if (File.Exists(path) && path.ToLower().EndsWith(".xzp"))
                 {
                     OpenXzpFile(path);
+                }
+                else if (File.Exists(path) && path.ToLower().EndsWith(".xus"))
+                {
+                    using (XusEditorForm editor = new XusEditorForm(path))
+                    {
+                        editor.ShowDialog(this);
+                    }
                 }
             }
             else if (currentMode == 1) // Inside XZP
@@ -920,6 +936,17 @@ namespace XZPToolv3
 
                     // Handle with XUI/XUR dialog
                     HandleXuiXurFile(tempPath);
+                }
+                else if (ext == ".xus")
+                {
+                    string tempPath = Path.Combine(Path.GetTempPath(), "XZPTool", entry.Name);
+                    Directory.CreateDirectory(Path.GetDirectoryName(tempPath));
+                    Xuiz.ExtractEntry(currentXzpFile, entry, tempPath);
+
+                    using (XusEditorForm editor = new XusEditorForm(tempPath))
+                    {
+                        editor.ShowDialog(this);
+                    }
                 }
                 else
                 {
@@ -1328,6 +1355,13 @@ namespace XZPToolv3
             {
                 OpenXzpFile(path);
             }
+            else if (File.Exists(path) && path.ToLower().EndsWith(".xus"))
+            {
+                using (XusEditorForm editor = new XusEditorForm(path))
+                {
+                    editor.ShowDialog(this);
+                }
+            }
             else if (File.Exists(path))
             {
                 System.Diagnostics.Process.Start(path);
@@ -1403,6 +1437,13 @@ namespace XZPToolv3
             else if (ext == ".xzp")
             {
                 OpenXzpFile(filePath);
+            }
+            else if (ext == ".xus")
+            {
+                using (XusEditorForm editor = new XusEditorForm(filePath))
+                {
+                    editor.ShowDialog(this);
+                }
             }
         }
 

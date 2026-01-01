@@ -44,9 +44,10 @@ Legend: Yes, No, Partial
 
 - **XZP Tool v2** does not implement direct delete inside archives. It rebuilds for rename and add operations but has no delete path in the archive logic.
 - **XZP Tool v3** also rebuilds archives for add/rename/delete; it is not a block-level in-place editor.
-- \*\*XuiWorkshop focuses on XUI/XUR editing and conversion, not XZP archives.
+- **XuiWorkshop** focuses on XUI/XUR editing and conversion, not XZP archives.
 - **XZP Tool v3** does not include XuiWorkshop's full editor UI (property editing, timeline editing, and batch conversion).
 - **XZPToolv3** includes encrypted byte output templates and RC4 helpers, which are not in v2 or XuiWorkshop.
+- **XZPToolv3** includes a basic XUS reader/writer window (Tools -> XUS Editor...).
 
 ## Credits
 

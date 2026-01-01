@@ -141,6 +141,13 @@
     <Compile Include="XuiViewerForm.Designer.cs">
       <DependentUpon>XuiViewerForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="XusEditorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XusEditorForm.Designer.cs">
+      <DependentUpon>XusEditorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XusFile.cs" />
     <Compile Include="Xuiz.cs" />
     <Compile Include="XuizEntry.cs" />
     <Compile Include="XuizParams.cs" />
@@ -179,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="XuiViewerForm.resx">
       <DependentUpon>XuiViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XusEditorForm.resx">
+      <DependentUpon>XusEditorForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
