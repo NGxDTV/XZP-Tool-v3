@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A5E5E5E5-5E5E-5E5E-5E5E-5E5E5E5E5E5E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>XZPToolv3</RootNamespace>
+    <AssemblyName>XZPToolv3</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>NGXZP-Logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BuildForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutForm.Designer.cs">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BuildForm.Designer.cs">
+      <DependentUpon>BuildForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConvertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConvertForm.Designer.cs">
+      <DependentUpon>ConvertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DetailsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DetailsForm.Designer.cs">
+      <DependentUpon>DetailsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppSettings.cs" />
+    <Compile Include="Endian.cs" />
+    <Compile Include="EncryptForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EncryptForm.Designer.cs">
+      <DependentUpon>EncryptForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OverwriteDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OverwriteDialog.Designer.cs">
+      <DependentUpon>OverwriteDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RC4.cs" />
+    <Compile Include="SettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsForm.Designer.cs">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemIconHelper.cs" />
+    <Compile Include="TimelineView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="XUI\BEBinaryReader.cs" />
+    <Compile Include="XUI\BEBinaryWriter.cs" />
+    <Compile Include="XUI\ByteArray.cs" />
+    <Compile Include="XUI\Log.cs" />
+    <Compile Include="XUI\LookupTable.cs" />
+    <Compile Include="XUI\XuiGlobals.cs" />
+    <Compile Include="XUI\XuiClass.cs" />
+    <Compile Include="XUI\XuiReader.cs" />
+    <Compile Include="XUI\XuiWriter.cs" />
+    <Compile Include="XUI\XmlExtensionParse.cs" />
+    <Compile Include="XUI\XuiTypeConverter.cs" />
+    <Compile Include="XUI\XurConstants.cs" />
+    <Compile Include="XUI\XurEnums.cs" />
+    <Compile Include="XUI\XurReader.cs" />
+    <Compile Include="XUI\XurStructs.cs" />
+    <Compile Include="XUI\XurWriter.cs" />
+    <Compile Include="XuiConverter.cs" />
+    <Compile Include="XuiImportDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XuiImportDialog.Designer.cs">
+      <DependentUpon>XuiImportDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XuiOpenDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XuiOpenDialog.Designer.cs">
+      <DependentUpon>XuiOpenDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="XuiViewerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XuiViewerForm.Designer.cs">
+      <DependentUpon>XuiViewerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Xuiz.cs" />
+    <Compile Include="XuizEntry.cs" />
+    <Compile Include="XuizParams.cs" />
+    <Compile Include="XzpMetadata.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BuildForm.resx">
+      <DependentUpon>BuildForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AboutForm.resx">
+      <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConvertForm.resx">
+      <DependentUpon>ConvertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DetailsForm.resx">
+      <DependentUpon>DetailsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EncryptForm.resx">
+      <DependentUpon>EncryptForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OverwriteDialog.resx">
+      <DependentUpon>OverwriteDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsForm.resx">
+      <DependentUpon>SettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XuiImportDialog.resx">
+      <DependentUpon>XuiImportDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XuiOpenDialog.resx">
+      <DependentUpon>XuiOpenDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XuiViewerForm.resx">
+      <DependentUpon>XuiViewerForm.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="NGXZP-Logo.ico" />
+    <Content Include="XUI\Extensions\XuiElements.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XUI\Extensions\XamElements.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="XUI\Extensions\CustomXuiElements.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
