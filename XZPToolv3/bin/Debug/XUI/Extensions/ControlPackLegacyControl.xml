@@ -1,0 +1,21 @@
+<XUIClassExtension version="0001">
+  <XUIClass Name="ControlPackLegacyControl" BaseClassName="XuiControl" Icon="Images/blank.bmp" Description="ControlPackLegacyControl">
+    <PropDef Name="Id" Type="string"><DefaultVal>LegacyControl1</DefaultVal></PropDef>
+    <PropDef Name="Width" Type="float"><DefaultVal>880.000000</DefaultVal></PropDef>
+    <PropDef Name="Height" Type="float"><DefaultVal>480.000000</DefaultVal></PropDef>
+  </XUIClass>
+
+  <XUIClass Name="DashScene" BaseClassName="XuiScene" Icon="Images/blank.bmp" Description="DashScene">
+    <PropDef Name="Id" Type="string"><DefaultVal>Scene_Main</DefaultVal></PropDef>
+    <PropDef Name="Width" Type="float"><DefaultVal>880.000000</DefaultVal></PropDef>
+    <PropDef Name="Height" Type="float"><DefaultVal>480.000000</DefaultVal></PropDef>
+    <PropDef Name="Position" Type="vector"><DefaultVal>-1.200000,0.000000,0.000000</DefaultVal></PropDef>
+    <PropDef Name="ClassOverride" Type="string"><DefaultVal>C2022_WirelessSecuritySettings</DefaultVal></PropDef>
+    <PropDef Name="Visual" Type="string"><DefaultVal>BackgroundPanel</DefaultVal></PropDef>
+    <PropDef Name="DefaultFocus" Type="string"><DefaultVal>list_items</DefaultVal></PropDef>
+    <PropDef Name="TransFrom" Type="string"><DefaultVal>FadeOut</DefaultVal></PropDef>
+    <PropDef Name="TransTo" Type="string"><DefaultVal>FadeIn</DefaultVal></PropDef>
+    <PropDef Name="TransBackFrom" Type="string"><DefaultVal>FadeOut</DefaultVal></PropDef>
+    <PropDef Name="TransBackTo" Type="string"><DefaultVal>FadeIn</DefaultVal></PropDef>
+  </XUIClass>
+</XUIClassExtension>

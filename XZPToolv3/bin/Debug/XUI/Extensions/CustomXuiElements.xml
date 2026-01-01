@@ -1,0 +1,37 @@
+<XUIClassExtension version="0001">
+ <XUIClass Name="XuiDivider1" BaseClassName="XuiElement" Icon="Images/blank.bmp" Description="Divider">
+ </XUIClass>
+ <XUIClass Name="XuiDivider2" BaseClassName="XuiElement" Icon="Images/blank.bmp" Description="Divider">
+ </XUIClass>
+ <XUIClass Name="GuideDashCommandNavButton" BaseClassName="XuiNavButton" Icon="Images/GuideDashCommandNavButton.bmp" Description="GuideDashCommandNavButton">
+  <PropDef Id="179" Name="DashCommand" Type="integer"><DefaultVal>0</DefaultVal></PropDef>
+ </XUIClass>
+ <XUIClass Name="AccountManagementNavButton" BaseClassName="GuideDashCommandNavButton">
+ </XUIClass> 
+ <XUIClass Name="AvatarEditorNavButton" BaseClassName="XuiNavButton">
+  <PropDef Id="180" Name="EntryPoint" Type="string"><DefaultVal></DefaultVal></PropDef>
+ </XUIClass>
+ <XUIClass Name="GuideMainSceneNavButton" BaseClassName="XuiNavButton" Icon="Images/GuideMainSceneNavButton.bmp" Description="GuideMainSceneNavButton">
+  <PropDef Id="181" Name="MainScenePressPath" Type="string"><DefaultVal></DefaultVal></PropDef>
+ </XUIClass>
+ <XUIClass Name="HUDScene" BaseClassName="XuiScene" Icon="Images/HUDScene.bmp" Description="HUDScene">
+  <PropDef Id="182" Editor="HudOpenTypeEditor" Name="OpenType" Type="unsigned"><DefaultVal>0</DefaultVal></PropDef>
+  <PropDef Id="183" Name="LegendA" Type="string"><DefaultVal></DefaultVal></PropDef>
+  <PropDef Id="184" Name="LegendB" Type="string"><DefaultVal></DefaultVal></PropDef>
+  <PropDef Id="185" Name="LegendX" Type="string"><DefaultVal></DefaultVal></PropDef>
+  <PropDef Id="186" Name="LegendY" Type="string"><DefaultVal></DefaultVal></PropDef>
+  <PropDef Id="187" Name="ShowGamerInfo" Type="bool"></PropDef>
+ </XUIClass>
+ <XUIClass Name="ScriptActionNavButton" BaseClassName="XuiNavButton" Icon="Images/ScriptActionNavButton.bmp" Description="ScriptActionNavButton">
+  <PropDef Id="188" Name="Param" Type="string"><DefaultVal></DefaultVal></PropDef>
+  <PropDef Id="189" Name="Param2" Type="string"><DefaultVal></DefaultVal></PropDef>
+  <PropDef Id="190" Name="Param3" Type="string"><DefaultVal></DefaultVal></PropDef>
+  <PropDef Id="191" Name="Param4" Type="string"><DefaultVal></DefaultVal></PropDef>
+  <PropDef Id="192" Name="Param5" Type="string"><DefaultVal></DefaultVal></PropDef>
+  <PropDef Id="193" Name="Param6" Type="string"><DefaultVal></DefaultVal></PropDef>
+ </XUIClass>
+ <XUIClass Name="XuiGuideNavButton" BaseClassName="XuiNavButton" Description="XuiGuideNavButton">
+  <PropDef Id="194" Name="CommandId" Type="integer"><DefaultVal>0</DefaultVal></PropDef>
+  <PropDef Id="195" Name="MainImagePath" Type="string"><DefaultVal></DefaultVal></PropDef>
+ </XUIClass> 
+</XUIClassExtension>
