@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/NGLive/xzp/LE.xzp\\(unpacked\\)/**)",
+      "Bash(echo \"EXIT: $?\")"
+    ]
+  }
+}

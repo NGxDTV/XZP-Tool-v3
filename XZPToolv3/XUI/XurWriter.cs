@@ -266,7 +266,7 @@ namespace XZPToolv3.XUI
                 }
                 else if (propData.PropType == XUIELEM_PROP_TYPE.XUI_EPT_FLOAT)
                 {
-                    int index = BinaryTables.FloatTable.GetIndex(Single.Parse(propData.PropValue.ToString(), System.Globalization.CultureInfo.InvariantCulture));
+                    int index = BinaryTables.FloatTable.GetIndex(Convert.ToSingle(propData.PropValue, System.Globalization.CultureInfo.InvariantCulture));
                     byteArray.AddPackedDWORD((uint)index);
                 }
                 else if (propData.PropType == XUIELEM_PROP_TYPE.XUI_EPT_INTEGER)
